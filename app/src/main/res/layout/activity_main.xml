@@ -24,32 +24,32 @@
     <TextView
         android:id="@+id/view1"
         android:layout_width="match_parent"
-        android:layout_height="100dp"
+        android:layout_height="80dp"
         android:background="#7A82B8"
         android:clickable="true"
         android:focusable="true"
         android:text="@string/text_first"
         android:textAlignment="textEnd"
         android:textColor="#171414"
-        android:textSize="24sp"
+        android:textSize="22sp"
         android:textStyle="normal"
         android:textAllCaps="true"/>
 
     <TextView
         android:id="@+id/view2"
         android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:layout_marginTop="@android:dimen/thumbnail_height"
+        android:layout_height="80dp"
+        android:layout_marginTop="@android:dimen/app_icon_size"
         android:background="#1C758B"
         android:clickable="true"
         android:focusable="true"
         android:text="@string/text2"
         android:textAlignment="center"
-        android:textSize="36sp"
+        android:textSize="22sp"
         android:textStyle="italic"
         android:textColor="@color/green"/>
 
-<!--    вместо Button прописала так и сработал фон кнопки-->
+    <!--    вместо Button прописала так и сработал фон кнопки-->
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/button"
         android:layout_width="182dp"
@@ -64,9 +64,10 @@
 
 </LinearLayout>
 
-<!--wrap_content- ширина и высота в зависимости от размера текста-->
-<!--match_parent- ширина и высота будет равна родительскому контейнеру, а можно задать высоту и ширину в dp-->
-<!--visibility  gone-пропадает текст в контейнере вместе со своим участком во view,
- invisible- view занимает участок экрана, но текст не виден, как пустой контейнер
- visibility-текст видно, по умолчанию visibility поэтому можно не указывать-->
-<!--clickable- true- кликабельный текст -->
+    <!--wrap_content- ширина и высота в зависимости от размера текста-->
+    <!--match_parent- ширина и высота будет равна родительскому контейнеру, а можно задать высоту и ширину в dp-->
+    <!--visibility  gone-пропадает текст в контейнере вместе со своим участком во view,
+     invisible- view занимает участок экрана, но текст не виден, как пустой контейнер
+     visibility-текст видно, по умолчанию visibility поэтому можно не указывать-->
+    <!--clickable- true- кликабельный текст -->
+
