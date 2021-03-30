@@ -1,45 +1,72 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/main_text"
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#2D46E8"
+        android:clickable="true"
+        android:focusable="true"
+        android:text="@string/text1"
+        android:textAlignment="center"
+        android:textColor="#171414"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#7A82B8"
+        android:clickable="true"
+        android:focusable="true"
+        android:text="@string/text_first"
+        android:textAlignment="textEnd"
+        android:textColor="#171414"
+        android:textSize="24sp"
+        android:textStyle="normal"
+        android:textAllCaps="true"/>
+
+    <TextView
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="@android:dimen/thumbnail_height"
+        android:background="#1C758B"
+        android:clickable="true"
+        android:focusable="true"
+        android:text="@string/text2"
+        android:textAlignment="center"
         android:textSize="36sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:textStyle="italic"
+        android:textColor="@color/green"/>
 
-    <Button
+<!--    вместо Button прописала так и сработал фон кнопки-->
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="128dp"
-        android:text="@string/second_button"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/button2"
-        app:layout_constraintHorizontal_bias="0.743"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:layout_constraintVertical_bias="0.072" />
+        android:layout_width="182dp"
+        android:layout_height="59dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_button"
+        android:insetTop="6dp"
+        android:insetBottom="6dp"
+        android:text="@string/button"
+        android:textColor="@color/black" />
 
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="128dp"
-        android:layout_marginEnd="52dp"
-        android:text="@string/first_button"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:layout_constraintVertical_bias="0.072" />
+</LinearLayout>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+<!--wrap_content- ширина и высота в зависимости от размера текста-->
+<!--match_parent- ширина и высота будет равна родительскому контейнеру, а можно задать высоту и ширину в dp-->
+<!--visibility  gone-пропадает текст в контейнере вместе со своим участком во view,
+ invisible- view занимает участок экрана, но текст не виден, как пустой контейнер
+ visibility-текст видно, по умолчанию visibility поэтому можно не указывать-->
+<!--clickable- true- кликабельный текст -->
