@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+<!--    tools:context=".MainActivity">-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/view"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="100dp"-->
+<!--        android:background="#2D46E8"-->
+<!--        android:clickable="true"-->
+<!--        android:focusable="true"-->
+<!--        android:text="@string/text1"-->
+<!--        android:textAlignment="center"-->
+<!--        android:textColor="#171414"-->
+<!--        android:textSize="28sp"-->
+<!--        android:textStyle="bold"-->
+<!--        android:visibility="invisible"/>-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/view1"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="80dp"-->
+<!--        android:background="#7A82B8"-->
+<!--        android:clickable="true"-->
+<!--        android:focusable="true"-->
+<!--        android:text="@string/text_first"-->
+<!--        android:textAlignment="textEnd"-->
+<!--        android:textColor="#171414"-->
+<!--        android:textSize="22sp"-->
+<!--        android:textStyle="normal"-->
+<!--        android:textAllCaps="true"/>-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/view2"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="80dp"-->
+<!--        android:layout_marginTop="@android:dimen/app_icon_size"-->
+<!--        android:background="#1C758B"-->
+<!--        android:clickable="true"-->
+<!--        android:focusable="true"-->
+<!--        android:text="@string/text2"-->
+<!--        android:textAlignment="center"-->
+<!--        android:textSize="22sp"-->
+<!--        android:textStyle="italic"-->
+<!--        android:textColor="@color/green"/>-->
+
+<!--    &lt;!&ndash;    вместо Button прописала так и сработал фон кнопки&ndash;&gt;-->
+<!--    <androidx.appcompat.widget.AppCompatButton-->
+<!--        android:id="@+id/button"-->
+<!--        android:layout_width="182dp"-->
+<!--        android:layout_height="59dp"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:background="@drawable/bg_button"-->
+<!--        android:insetTop="6dp"-->
+<!--        android:insetBottom="6dp"-->
+<!--        android:text="@string/button"-->
+<!--        android:textColor="@color/black" />-->
+
+</LinearLayout>
+
+<!--    &lt;!&ndash;wrap_content- ширина и высота в зависимости от размера текста&ndash;&gt;-->
+<!--    &lt;!&ndash;match_parent- ширина и высота будет равна родительскому контейнеру, а можно задать высоту и ширину в dp&ndash;&gt;-->
+<!--    &lt;!&ndash;visibility  gone-пропадает текст в контейнере вместе со своим участком во view,-->
+<!--     invisible- view занимает участок экрана, но текст не виден, как пустой контейнер-->
+<!--     visibility-текст видно, по умолчанию visibility поэтому можно не указывать&ndash;&gt;-->
+<!--    &lt;!&ndash;clickable- true- кликабельный текст &ndash;&gt;-->
+

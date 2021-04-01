@@ -7,6 +7,6 @@
     <string name="text2">Домашнее задание  23</string>
     <string name="button">Кнопка</string>
     <string name="text_first">Второй текст урока 23. Изменила фон, шрифт и расположение с правого края.</string>
-<!--    <string name="text_24">Занятие 24.</string>-->
-<!--    <string name="greeting">Занятие 24 "Textview, Textedit".</string>-->
+    <string name="greeting">Занятие 24 "Textview, Textedit".</string>
+    <string name="text_24">Занятие 24.</string>
 </resources>
